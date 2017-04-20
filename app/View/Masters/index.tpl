@@ -1,0 +1,67 @@
+<div class="makers index">
+    <h2>{$screen_name}</h2>
+    <table cellpadding="0" cellspacing="0">
+        <thead>
+            <tr>
+                <th>{$this->Paginator->sort('id')}</th>
+                <th>{$this->Paginator->sort('orgs_id')}</th>
+                <th>{$this->Paginator->sort('places_id')}</th>
+                <th>{$this->Paginator->sort('auth_groups_id')}</th>
+                <th>{$this->Paginator->sort('no_in_org')}</th>
+                <th>{$this->Paginator->sort('users_id_created')}</th>
+                <th>{$this->Paginator->sort('created')}</th>
+                <th>{$this->Paginator->sort('users_id_modified')}</th>
+                <th>{$this->Paginator->sort('modified')}</th>
+                <th>{$this->Paginator->sort('disp_order')}</th>
+                <th>{$this->Paginator->sort('is_deleted')}</th>
+                <th>{$this->Paginator->sort('remarks')}</th>
+                <th>{$this->Paginator->sort('attribute_id')}</th>
+                <th>{$this->Paginator->sort('name')}</th>
+                <th>{$this->Paginator->sort('furigana')}</th>
+                <th>{$this->Paginator->sort('text1')}</th>
+                <th>{$this->Paginator->sort('text2')}</th>
+                <th>{$this->Paginator->sort('text3')}</th>
+                <th>{$this->Paginator->sort('text4')}</th>
+                <th>{$this->Paginator->sort('text5')}</th>
+                <th>{$this->Paginator->sort('text6')}</th>
+                <th>{$this->Paginator->sort('text7')}</th>
+                <th>{$this->Paginator->sort('text8')}</th>
+                <th>{$this->Paginator->sort('text9')}</th>
+                <th>{$this->Paginator->sort('text10')}</th>
+            </tr>
+        </thead>
+        <tbody>
+            {foreach from=$masters item=master}
+                <tr>
+                    <td>{$master[$model]['id']|escape:"html"}&nbsp;</td>
+                    <td>{$master[$model]['orgs_id']|escape:"html"}&nbsp;</td>
+                    <td>{$master[$model]['places_id']|escape:"html"}&nbsp;</td>
+                    <td>{$master[$model]['auth_groups_id']|escape:"html"}&nbsp;</td>
+                    <td>{$master[$model]['no_in_org']|escape:"html"}&nbsp;</td>
+                    <td>{$master[$model]['users_id_created']|escape:"html"}&nbsp;</td>
+                    <td>{$master[$model]['created']|escape:"html"}&nbsp;</td>
+                    <td>{$master[$model]['users_id_modified']|escape:"html"}&nbsp;</td>
+                    <td>{$master[$model]['modified']|escape:"html"}&nbsp;</td>
+                    <td>{$master[$model]['disp_order']|escape:"html"}&nbsp;</td>
+                    <td>{$master[$model]['is_deleted']|escape:"html"}&nbsp;</td>
+                    <td>{$master[$model]['remarks']|escape:"html"}&nbsp;</td>
+                    <td>{$master[$model]['attribute_id']|escape:"html"}&nbsp;</td>
+                    <td>{$master[$model]['name']|escape:"html"}&nbsp;</td>
+                    <td>{$master[$model]['furigana']|escape:"html"}&nbsp;</td>
+                    <td>{$master[$model]['text1']|escape:"html"}&nbsp;</td>
+                    <td>{$master[$model]['text2']|escape:"html"}&nbsp;</td>
+                    <td>{$master[$model]['text3']|escape:"html"}&nbsp;</td>
+                    <td>{$master[$model]['text4']|escape:"html"}&nbsp;</td>
+                    <td>{$master[$model]['text5']|escape:"html"}&nbsp;</td>
+                    <td>{$master[$model]['text6']|escape:"html"}&nbsp;</td>
+                    <td>{$master[$model]['text7']|escape:"html"}&nbsp;</td>
+                    <td>{$master[$model]['text8']|escape:"html"}&nbsp;</td>
+                    <td>{$master[$model]['text9']|escape:"html"}&nbsp;</td>
+                    <td>{$master[$model]['text10']|escape:"html"}&nbsp;</td>
+                </tr>
+            {/foreach}
+        </tbody>
+    </table>
+
+        
+</div>
